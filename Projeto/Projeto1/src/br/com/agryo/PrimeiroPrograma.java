@@ -4,7 +4,7 @@ import br.com.agryo.model.Gato;
 
 public class PrimeiroPrograma {
     public static void main(String[] args) {
-        Gato gato = new Gato("Agryo", "Vermelho", 37);
+        Gato gato = new Gato("Agryo AF", "Vermelho", 37);
         System.out.println(gato);
 
         Livro livro1 = new Livro("Programação Orientada a Objetos", 540);
