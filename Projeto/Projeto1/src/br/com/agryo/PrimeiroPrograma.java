@@ -9,10 +9,6 @@ public class PrimeiroPrograma {
 
         Livro livro1 = new Livro("Programação Orientada a Objetos", 540);
         System.out.println(livro1);
-
-        /*int a = 10;
-        int b = 15;
-        System.out.println("Hello World! " + (a+b));*/
     }
 }
 
