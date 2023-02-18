@@ -15,6 +15,16 @@ public class SmartTv {
         canal = novoCanal;
         System.out.println("Mudou para o canal: " + canal);
     }
+    public void power(){
+        if (ligada == false) {
+            ligada = true;
+            System.out.println("A TV foi ligada!");
+        }
+        else {
+            ligada = false;
+            System.out.println("A TV foi desligada!");
+        }
+    }
     public void ligar(){
         ligada = true;
     }

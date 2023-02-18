@@ -8,21 +8,20 @@ public class Usuario {
         System.out.println("Qual o canal? " + smartTv.canal);
         System.out.println("Qual volume atual? " + smartTv.volume);
 
-        smartTv.ligar();
-        System.out.println("Novo Status -> Está ligada? " + smartTv.ligada);
+        //smartTv.ligar();
+        //System.out.println("Novo Status -> Está ligada? " + smartTv.ligada);
+        smartTv.power();
 
-        smartTv.aumentarVolume();
-        smartTv.aumentarVolume();
         smartTv.aumentarVolume();
         smartTv.baixarVolume();
 
         smartTv.mudarCanal(15);
         smartTv.subirCanal();
-        smartTv.subirCanal();
         smartTv.descerCanal();
         smartTv.mudarCanal(8);
 
-        smartTv.desligar();
-        System.out.println("Novo Status -> Está ligada? " + smartTv.ligada);
+        //smartTv.desligar();
+        //System.out.println("Novo Status -> Está ligada? " + smartTv.ligada);
+        smartTv.power();
     }
 }
