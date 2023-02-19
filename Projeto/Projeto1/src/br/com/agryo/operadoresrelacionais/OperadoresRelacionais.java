@@ -1,6 +1,7 @@
 package br.com.agryo.operadoresrelacionais;
 public class OperadoresRelacionais {
     public static void main(String[] args) {
+        //EXERCICIO 1
         //Todos os tipos de variavéis declaradas neste exemplo
         int i1 = 10;
         int i2 = 20;
