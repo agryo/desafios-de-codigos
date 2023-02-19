@@ -52,6 +52,7 @@ public class OperadoresLogicos {
         System.out.println("Quantidade de dependentes da família: " + quantidadeDependentes);
         System.out.println("Média de dependentes por família: " + mediaDependentes);
         System.out.println("------------------------------------");
+        //Primeira lógica de expressão
         System.out.println("Primeira lógica");
         System.out.println("Recebe Auxílio: " + ((salarioMensal < salarioMedio) && (quantidadeDependentes >= mediaDependentes)));
         //Segunda lógica
