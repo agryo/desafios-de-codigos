@@ -1,6 +1,7 @@
 package br.com.agryo.operadoresrelacionais;
 public class OperadoresRelacionais {
     public static void main(String[] args) {
+        //Todos os tipos de variavéis declaradas nes exemplo
         int i1 = 10;
         int i2 = 20;
         float f1 = 4.5f;
