@@ -67,5 +67,5 @@ public class OperadoresLogicos {
         boolean recebeAuxilio = salarioBaixo && muitosDependentes;
         //Toda a primeira expressão foi reduzida a uma variável
         System.out.println("Recebe Auxílio: " + recebeAuxilio);
-        }
+    }
 }
