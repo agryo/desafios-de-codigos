@@ -38,5 +38,33 @@ public class OperadoresLogicos {
         System.out.println("Resultado lógico de (i1 é maior que i2) OU (resultado de f2 é menor que f1) é: " + ((i1 > i2) || (f2 < f1)));
         System.out.println("Resultado lógico da (soma de i1 + i2) MENOR QUE o (resultado da subtração de f2 - f1) E o valor lógico VERDADE é: " + ((((i1 + i2) < (f2 - f1)) && true)));
 
+        //Exemplos de simplificação de expressões
+        //Exemplo de uso de lógica para ver qyem recebe ayxílio alimentação
+        double salarioMensal = 1623.50d;
+        double salarioMedio = 2787.50d;
+        int quantidadeDependentes = 9;
+        int mediaDependentes = 5;
+        //Exemplos de lógicas
+        System.out.println("------------------------------------");
+        System.out.println("Exemplo do calculo do Auxílio Brasil");
+        System.out.println("Salário Mensal: " + salarioMensal);
+        System.out.println("Média Salarial: " + salarioMedio);
+        System.out.println("Quantidade de dependentes da família: " + quantidadeDependentes);
+        System.out.println("Média de dependentes por família: " + mediaDependentes);
+        System.out.println("------------------------------------");
+        System.out.println("Primeira lógica");
+        System.out.println("Recebe Auxílio: " + ((salarioMensal < salarioMedio) && (quantidadeDependentes >= mediaDependentes)));
+        //Segunda lógica
+        System.out.println("Segunda lógica");
+        //Cria variaveis para serem apriveitadas
+        boolean salarioBaixo = salarioMensal < salarioMedio;
+        boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
+        //Já diminui bastante a segunda lógica
+        System.out.println("Recebe Auxílio: " + ((salarioBaixo) && (muitosDependentes)));
+        //Terceira lógica aproveitando as variavéis criando uma nova variável
+        System.out.println("Terceira lógica");
+        boolean recebeAuxilio = salarioBaixo && muitosDependentes;
+        //Toda a primeira expressão foi reduzida a uma variável
+        System.out.println("Recebe Auxílio: " + recebeAuxilio);
         }
 }
