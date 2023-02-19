@@ -26,8 +26,8 @@ public class OperadoresLogicos {
         System.out.println("b1 e b2 é: " + (b1 && b2));
         System.out.println("b1 e b3 é: " + (b1 && b3));
         //Operações Lógicas conectivo OU (or)
-        System.out.println("b2 ou b3 é: " + (b2 && b3));
-        System.out.println("b2 ou b4 é: " + (b2 && b4));
+        System.out.println("b2 ou b3 é: " + (b2 || b3));
+        System.out.println("b2 ou b4 é: " + (b2 || b4));
         //Operações Lógicas conectivos OU EXCLUSIVO (xor)
         System.out.println("ou b1 ou b3 não ambas é: " + (b1 ^ b3));
         System.out.println("ou b4 ou b1 não ambas é: " + (b4 ^ b1));
@@ -39,7 +39,7 @@ public class OperadoresLogicos {
         System.out.println("Resultado lógico da (soma de i1 + i2) MENOR QUE o (resultado da subtração de f2 - f1) E o valor lógico VERDADE é: " + ((((i1 + i2) < (f2 - f1)) && true)));
 
         //Exemplos de simplificação de expressões
-        //Exemplo de uso de lógica para ver qyem recebe ayxílio alimentação
+        //Exemplo de uso de lógica para ver quem recebe ayxílio alimentação
         double salarioMensal = 1623.50d;
         double salarioMedio = 2787.50d;
         int quantidadeDependentes = 9;
@@ -57,7 +57,7 @@ public class OperadoresLogicos {
         System.out.println("Recebe Auxílio: " + ((salarioMensal < salarioMedio) && (quantidadeDependentes >= mediaDependentes)));
         //Segunda lógica
         System.out.println("Segunda lógica");
-        //Cria variaveis para serem apriveitadas
+        //Cria variaveis para serem aproveitadas
         boolean salarioBaixo = salarioMensal < salarioMedio;
         boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
         //Já diminui bastante a segunda lógica
