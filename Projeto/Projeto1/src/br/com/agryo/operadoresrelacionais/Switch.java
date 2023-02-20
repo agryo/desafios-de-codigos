@@ -11,10 +11,8 @@ public class Switch {
         System.out.println("Digite o dia da semana para informar o número correspondente: ");
         diaSemana = scan.nextLine();
         numeroDia(diaSemana);
-
     }
-
-    public static void numeroDia(String diaSemana) {
+    public static void numeroDia(String diaSemana){
         switch (diaSemana) {
             case ("Domingo"):
                 System.out.println("O dia " + diaSemana + " corresponde ao número 1!");
