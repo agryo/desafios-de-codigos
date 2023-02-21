@@ -1,9 +1,6 @@
 package br.com.agryo.operadoresrelacionais;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.spi.AbstractResourceBundleProvider;
 
 public class Switch {
     public static void main(String[] args) {
