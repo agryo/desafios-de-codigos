@@ -23,6 +23,6 @@ public class Loops {
             System.out.println("Digite a Idade: ");
             idade = scan.nextInt();
         }
-
+        System.out.println("Continuaria daqui...");
     }
 }
