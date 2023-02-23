@@ -10,18 +10,18 @@ e ele irá repetir enquanto o usuario desejar.
  */
 public class Loops {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner digitar = new Scanner(System.in);
 
         String nome;
         int idade;
 
         while (true) {
             System.out.println("Digite o Nome: ");
-            nome = scan.next();
+            nome = digitar.next();
             if (nome.equals("0")) break;
 
             System.out.println("Digite a Idade: ");
-            idade = scan.nextInt();
+            idade = digitar.nextInt();
         }
         System.out.println("Continuaria daqui...");
     }
