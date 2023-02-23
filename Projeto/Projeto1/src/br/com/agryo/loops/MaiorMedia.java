@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MaiorMedia {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner digitar = new Scanner(System.in);
 
         int contador = 5;
         double numero;
@@ -17,7 +17,7 @@ public class MaiorMedia {
 
         do {
             System.out.println("Faltam " + contador + ", digite o numero: ");
-            numero = scan.nextDouble();
+            numero = digitar.nextDouble();
             contador--;
             soma = soma + numero;
             if (numero > maior) maior = numero;
