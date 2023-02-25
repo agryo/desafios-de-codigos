@@ -9,10 +9,12 @@ public class ParImpar {
         int numero;
         int par = 0;
         int impar = 0;
-        int contador = 10;
+        int contador;
 
-        System.out.println("Digite 10 números inteiros");
-        System.out.println("e vou dizer quantos são Par e quantos são Impar.");
+        System.out.println("Digite números inteiros e vou dizer");
+        System.out.println("quantos são Par e quantos são Impar.");
+        System.out.println("Quantos números você quer digitar? ");
+        contador = digitar.nextInt();
 
         do {
             System.out.println("Digite um numero: ");
