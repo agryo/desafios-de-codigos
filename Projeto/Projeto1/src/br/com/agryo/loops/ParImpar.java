@@ -7,12 +7,10 @@ public class ParImpar {
         Scanner digitar = new Scanner(System.in);
 
         int numero;
-        int par = 0;
-        int impar = 0;
+        int par = 0, impar = 0;
         int contador;
 
-        System.out.println("Digite números inteiros e vou dizer");
-        System.out.println("quantos são Par e quantos são Impar.");
+        System.out.println("Digite números inteiros e vou dizer quantos são Par e quantos são Impar.");
         System.out.println("Quantos números você quer digitar? ");
         contador = digitar.nextInt();
 
@@ -23,6 +21,7 @@ public class ParImpar {
             if (numero % 2 == 0) par++;
             else impar++;
         } while (contador != 0);
+
         System.out.println("O total de números PAR foi: " + par);
         System.out.println("O total de números IMPAR foi: " + impar);
         System.out.println("Finalizado!");
