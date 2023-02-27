@@ -22,9 +22,15 @@ public class Aleatorio {
             System.out.print(numero + " ");
         }
 
+        System.out.print("\nAntecessor dos números aleatórios: ");
+        for (int numero : numerosAleatorios) {
+            System.out.print((numero-1) + " ");
+        }
+
         System.out.print("\nSucessores dos números aleatórios: ");
         for (int numero : numerosAleatorios) {
             System.out.print((numero+1) + " ");
         }
+
     }
 }
