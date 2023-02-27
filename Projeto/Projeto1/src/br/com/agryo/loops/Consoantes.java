@@ -13,7 +13,7 @@ public class Consoantes {
         System.out.println("O tamanho do vetor é: " + consoantes.length);
 
         do{
-            System.out.println("Digite uma letra: ");
+            System.out.print("Digite uma letra: ");
             String letra = digitar.next();
 
             if ( !(letra.equalsIgnoreCase("a") |
@@ -24,17 +24,15 @@ public class Consoantes {
                 consoantes[contador] = letra;
                 quantidadeCosoantes++;
             }
-
             contador++;
         }while (contador < consoantes.length);
 
+        System.out.println("\nA quantidade de consoantes foi: " + quantidadeCosoantes);
         System.out.println("As consoantes desse vetor são: ");
         for ( String consoante : consoantes ){
-            if (consoante != null){
+            if (consoante != null)
                 System.out.print(consoante + " ");
-            }
         }
 
-        System.out.println("\nA quantidade de consoantes foi: " + quantidadeCosoantes);
     }
 }
