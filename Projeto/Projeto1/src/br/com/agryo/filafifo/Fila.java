@@ -74,7 +74,7 @@ public class Fila<T> {
     @Override
     public String toString() {
         String stringRetorno = "";
-        No noAuxiliar = refNoEntradaFila;
+        No<T> noAuxiliar = refNoEntradaFila;
 
         if (refNoEntradaFila != null){
             while (true){
@@ -82,12 +82,12 @@ public class Fila<T> {
                 if (noAuxiliar.getRefNo() != null){
                     noAuxiliar = noAuxiliar.getRefNo();
                 }else {
-                    stringRetorno += "null";
+                    stringRetorno += "| Balcão";
                     break;
                 }
             }
         }else {
-            stringRetorno = "null";
+            stringRetorno = "Vago";
         }
         return stringRetorno;
     }

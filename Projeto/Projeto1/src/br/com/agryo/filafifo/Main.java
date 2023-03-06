@@ -5,6 +5,7 @@ public class Main {
         //Fila<T> minhaFila = new Fila(); //Geerics = <T> generico, geral ´pode
         Fila<String> minhaFila = new Fila<>(); //Geerics = <String> só recebe String, outro da erro
 
+        System.out.println(minhaFila);
         //minhaFila.enqueue(new No("Primeiro")); //enqueue = enfileirar, adicionar na fila. MODO RUIM!
         minhaFila.enqueue("Primeiro"); //enqueue = enfileirar, adicionar na fila. MODO BOM!
         //minhaFila.enqueue(true); //Booleano - Recebe tudo
@@ -38,5 +39,13 @@ public class Main {
         System.out.println("Ficam na fila...");
         System.out.println(minhaFila);
         System.out.println(minhaFila.first() + " é o primeiro. -> Está sendo atendido...");
+
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila.dequeue() + " - Sai da fila.");
+        System.out.println(minhaFila);
     }
 }
