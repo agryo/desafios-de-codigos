@@ -1,4 +1,7 @@
 package br.com.agryo.arvorebinaria;
+
+import java.util.concurrent.ConcurrentNavigableMap;
+
 public class ArvoreBinaria<T extends Comparable<T>> {
     private NoBin<T> raiz;
     public ArvoreBinaria(){
@@ -55,6 +58,54 @@ public class ArvoreBinaria<T extends Comparable<T>> {
             System.out.println(noAtual.getConteudo() + ", ");
             exibirPreOrdem(noAtual.getNoEsquerdo());
             exibirPreOrdem(noAtual.getNoDireito());
+        }
+    }
+
+    public void remover(T conteudo){
+        try {
+            NoBin<T> noAtual = this.raiz;
+            NoBin<T> noPai = null;
+            NoBin<T> noFilho = null;
+            NoBin<T> noTemp = null;
+            while (noAtual != null && !noAtual.getConteudo().equals(conteudo)){
+                noPai = noAtual;
+                if (conteudo.compareTo(noAtual.getConteudo()) < 0){
+                    noAtual = noAtual.getNoEsquerdo();
+                }else {
+                    noAtual = noAtual.getNoDireito();
+                }
+            }
+            if (noAtual == null){
+                System.out.println("Conteudo nao encontrado. Bloco Try");
+            }
+            if (noPai == null){
+                if (noAtual.getNoDireito() == null){
+                    this.raiz = noAtual.getNoEsquerdo();
+                }else if (noAtual.getNoEsquerdo() == null){
+                    this.raiz = noAtual.getNoDireito();
+                }else {
+                    for ( noTemp = noAtual, noFilho = noAtual.getNoEsquerdo();
+                          noFilho.getNoDireito() != null;
+                          noTemp = noFilho, noFilho = noFilho.getNoEsquerdo();
+                    ){
+                        if (noFilho != noAtual.getNoEsquerdo()){
+                            noTemp.setNoDireito(noFilho.getNoEsquerdo());
+                            noFilho.setNoEsquerdo(raiz.getNoEsquerdo());
+                        }
+                    }
+                    noFilho.setNoDireito(raiz.getNoDireito());
+                    raiz = noFilho;
+                }
+            }else if (noAtual.getNoDireito() == null){
+                
+            }else if (noAtual.getNoEsquerdo() == null){
+                
+            }else {
+
+            }
+
+        }catch (NullPointerException erro){
+            System.out.println("Conteudo nao encontrado. Bloco Catch");
         }
     }
 }
