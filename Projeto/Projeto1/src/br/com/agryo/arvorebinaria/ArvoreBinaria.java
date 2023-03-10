@@ -30,7 +30,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
     private void exibirInOrdem(NoBin<T> noAtual){
         if (noAtual != null){
             exibirInOrdem(noAtual.getNoEsquerdo());
-            System.out.println(noAtual.getConteudo() + ", ");
+            System.out.print(noAtual.getConteudo() + ", ");
             exibirInOrdem(noAtual.getNoDireito());
         }
     }
@@ -44,7 +44,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
         if (noAtual != null){
             exibirPosOrdem(noAtual.getNoEsquerdo());
             exibirPosOrdem(noAtual.getNoDireito());
-            System.out.println(noAtual.getConteudo() + ", ");
+            System.out.print(noAtual.getConteudo() + ", ");
         }
     }
 
@@ -55,7 +55,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
 
     private void exibirPreOrdem(NoBin<T> noAtual){
         if (noAtual != null){
-            System.out.println(noAtual.getConteudo() + ", ");
+            System.out.print(noAtual.getConteudo() + ", ");
             exibirPreOrdem(noAtual.getNoEsquerdo());
             exibirPreOrdem(noAtual.getNoDireito());
         }
@@ -86,7 +86,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
                 }else {
                     for ( noTemp = noAtual, noFilho = noAtual.getNoEsquerdo();
                           noFilho.getNoDireito() != null;
-                          noTemp = noFilho, noFilho = noFilho.getNoEsquerdo();
+                          noTemp = noFilho, noFilho = noFilho.getNoEsquerdo()
                     ){
                         if (noFilho != noAtual.getNoEsquerdo()){
                             noTemp.setNoDireito(noFilho.getNoEsquerdo());
@@ -97,21 +97,21 @@ public class ArvoreBinaria<T extends Comparable<T>> {
                     raiz = noFilho;
                 }
             }else if (noAtual.getNoDireito() == null){
-                if (noPai.getNoEsquerdo() == noAtuall){
+                if (noPai.getNoEsquerdo() == noAtual){
                     noPai.setNoEsquerdo(noAtual.getNoEsquerdo());
                 }else {
                     noPai.setNoDireito(noAtual.getNoEsquerdo());
                 }
             }else if (noAtual.getNoEsquerdo() == null){
-                if (noPai.getNoEsquerdo() == noAtuall){
+                if (noPai.getNoEsquerdo() == noAtual){
                     noPai.setNoEsquerdo(noAtual.getNoDireito());
                 }else {
                     noPai.setNoDireito(noAtual.getNoDireito());
                 }
             }else {
-                for ( noTemp = noAtual; noFilho = noAtual.getNoEsquerdo();
-                      noFilho.getNoDireito() != null;
-                      noTemp = noFilho; noFilho.getNoDireito();
+                for ( noTemp = noAtual, noFilho = noAtual.getNoEsquerdo();
+                      noFilho.getNoEsquerdo() != null;
+                      noTemp = noFilho, noFilho.getNoDireito()
                 ){
                     if (noFilho != noAtual.getNoEsquerdo()){
                         noTemp.setNoDireito(noFilho.getNoEsquerdo());
