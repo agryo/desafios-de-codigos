@@ -97,11 +97,33 @@ public class ArvoreBinaria<T extends Comparable<T>> {
                     raiz = noFilho;
                 }
             }else if (noAtual.getNoDireito() == null){
-                
+                if (noPai.getNoEsquerdo() == noAtuall){
+                    noPai.setNoEsquerdo(noAtual.getNoEsquerdo());
+                }else {
+                    noPai.setNoDireito(noAtual.getNoEsquerdo());
+                }
             }else if (noAtual.getNoEsquerdo() == null){
-                
+                if (noPai.getNoEsquerdo() == noAtuall){
+                    noPai.setNoEsquerdo(noAtual.getNoDireito());
+                }else {
+                    noPai.setNoDireito(noAtual.getNoDireito());
+                }
             }else {
-
+                for ( noTemp = noAtual; noFilho = noAtual.getNoEsquerdo();
+                      noFilho.getNoDireito() != null;
+                      noTemp = noFilho; noFilho.getNoDireito();
+                ){
+                    if (noFilho != noAtual.getNoEsquerdo()){
+                        noTemp.setNoDireito(noFilho.getNoEsquerdo());
+                        noFilho.setNoEsquerdo(noAtual.getNoEsquerdo());
+                    }
+                    noFilho.setNoDireito(noAtual.getNoDireito());
+                    if (noPai.getNoEsquerdo() == noAtual){
+                        noPai.setNoEsquerdo(noFilho);
+                    }else {
+                        noPai.setNoDireito(noFilho);
+                    }
+                }
             }
 
         }catch (NullPointerException erro){
