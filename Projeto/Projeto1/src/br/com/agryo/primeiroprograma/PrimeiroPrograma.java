@@ -1,4 +1,4 @@
-package br.com.agryo;
+package br.com.agryo.primeiroprograma;
 
 import br.com.agryo.model.Gato;
 
