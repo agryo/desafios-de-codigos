@@ -16,7 +16,9 @@ public class Main {
         System.out.println("Digite a largura dos lados do Quadrado.");
         largura = digitar.nextDouble();
 
-        System.out.println("A área do Quadrado é: " + Quadrilatoro.area(largura));
+        //O retorno já pode ser adicionado diretamente na variável
+        double areaQuadrado = Quadrilatoro.area(largura);
+        System.out.println("A área do Quadrado é: " + areaQuadrado);
 
         System.out.println("\nAgora o cálculo da área do Retângulo.");
         System.out.println("Digite a base do retângulo: ");
@@ -24,7 +26,9 @@ public class Main {
         System.out.println("Digite a altura do retângulo: ");
         altura = digitar.nextDouble();
 
-        System.out.println("A área do Retângulo é: " + Quadrilatoro.area(bMaior, altura));
+        //O retorno já pode ser adicionado diretamente na variável
+        double areaRetangulo = Quadrilatoro.area(bMaior, altura);
+        System.out.println("A área do Retângulo é: " + areaRetangulo);
 
         System.out.println("\nAgora o cálculo da área do Trapézio.");
         System.out.println("Digite a base maior do trapézio: ");
@@ -34,7 +38,9 @@ public class Main {
         System.out.println("Digite a altura do trapézio: ");
         altura = digitar.nextDouble();
 
-        System.out.println("A área do Trapézio é: " + Quadrilatoro.area(bMaior, bMenor, altura));
+        //O retorno já pode ser adicionado diretamente na variável
+        double areaTrapezio = Quadrilatoro.area(bMaior, bMenor, altura);
+        System.out.println("A área do Trapézio é: " + areaTrapezio);
 
         System.out.println("\nAgora o cálculo da área do Lozango.");
         System.out.println("Digite a primeira diagonal do lozango: ");
@@ -42,6 +48,8 @@ public class Main {
         System.out.println("Digite a segunda diagonal do lozango: ");
         diagonal2 = digitar.nextFloat();
 
-        System.out.println("A área do Lozango é: " + Quadrilatoro.area(diagonal1, diagonal2));
+        //O retorno já pode ser adicionado diretamente na variável
+        float areaLozango = Quadrilatoro.area(diagonal1, diagonal2);
+        System.out.println("A área do Lozango é: " + areaLozango);
     }
 }
