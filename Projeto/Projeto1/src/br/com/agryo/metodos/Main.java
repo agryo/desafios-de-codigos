@@ -33,6 +33,8 @@ public class Main {
         parcela = digitar.nextInt();
 
         Emprestimo.calcularEmprestimo(emprestimo, parcela);
+        //Aqui foi usado diretamente o método que pega 3 parcelas
+        Emprestimo.calcularEmprestimo(emprestimo, Emprestimo.getTresParcelas());
 
         System.out.println("----------------------------------------------------------");
         System.out.println("               AGORA USO DO MÉTODO MENSAGEM!!");

@@ -4,9 +4,8 @@ public class Emprestimo {
     private static int getDuasParcelas(){
         return 2;
     }
-    private static int getTresParcelas(){
-        return 3;
-    }
+    //Esse método abaixo foi usado como público para ser usado como exemplo direto no parametro do calcularEmprestimo
+    public static int getTresParcelas(){ return 3; }
     private static double getTaxaDuasParcelas(){
         return 0.65;
     }
