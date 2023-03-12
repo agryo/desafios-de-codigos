@@ -35,6 +35,8 @@ public class Mensagem {
             case 4:
                 msgBoaMadrugada();
                 break;
+            default:
+                System.out.println("Essa hora não existe!");
         }
     }
     private static void msgBomDia(){
