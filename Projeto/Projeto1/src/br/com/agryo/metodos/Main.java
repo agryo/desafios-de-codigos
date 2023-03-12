@@ -35,6 +35,8 @@ public class Main {
         Emprestimo.calcularEmprestimo(emprestimo, parcela);
         //Aqui foi usado diretamente o método que pega 3 parcelas
         Emprestimo.calcularEmprestimo(emprestimo, Emprestimo.getTresParcelas());
+        //Aqui foi usado diretamente o valor de um tipo inteiro das parcelas, um valor inválido
+        Emprestimo.calcularEmprestimo(emprestimo, 5);
 
         System.out.println("----------------------------------------------------------");
         System.out.println("               AGORA USO DO MÉTODO MENSAGEM!!");
