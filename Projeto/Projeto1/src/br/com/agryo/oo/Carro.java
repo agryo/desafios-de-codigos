@@ -36,7 +36,7 @@ public class Carro {
     }
 
     //Métodos
-    double valorTotalTanque(double valorGasolina) {
-        return capacidadeTanque * valorGasolina;
+    double totalValorTanque(double valorGasolina) {
+        return valorGasolina * capacidadeTanque;
     }
 }
