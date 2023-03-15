@@ -1,15 +1,14 @@
 package br.com.agryo.oo;
 
-public class Carro {
+public class Carro extends Vaiculo{
     String cor;
     String modelo;
     int capacidadeTanque;
 
-    //Construtor
+    //Construtores
     public Carro() {
     }
-
-    Carro(String cor, String modelo, int capacidadeTanque){
+    public Carro(String cor, String modelo, int capacidadeTanque){
         this.cor = cor;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
