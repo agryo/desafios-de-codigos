@@ -14,7 +14,7 @@ public class Aplicativo {
         System.out.println("Tanque: " + carro1.getCapacidadeTanque() + " Litros.");
         System.out.println("Custo para encher Tanque: R$" + carro1.totalValorTanque(5.89));
 
-        //Forma de declarar objeto adicionando já os atributos OBS: Foi criado outro construtor
+        //Forma de declarar objeto adicionando já os atributos OBS: Foi criado outro construtor.
         Carro carro2 = new Carro("Preto", "Ret", 49);
 
         System.out.println("-----------------------------------------------");
